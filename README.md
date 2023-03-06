@@ -4,3 +4,4 @@
 
 ## 목차
 - [1장 프로그래밍](https://github.com/sejineeee/ModernJavascript/blob/main/chapter1/programming.md)
+- [4장 변수](https://github.com/sejineeee/ModernJavascript/blob/main/chapter2/variable.md)
