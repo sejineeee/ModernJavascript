@@ -9,3 +9,7 @@
 - [6장 데이터 타입](https://github.com/sejineeee/ModernJavascript/blob/main/chapter5/typeOfData.md)
 - [7장 연산자](https://github.com/sejineeee/ModernJavascript/blob/main/chapter6/operator.md)
 - [8장 제어문](https://github.com/sejineeee/ModernJavascript/blob/main/chapter7/controlStatement.md)
+- 9장
+  - [타입변환](https://github.com/sejineeee/ModernJavascript/blob/main/chapter8/typeConversion.md)
+  - [단축평가](https://github.com/sejineeee/ModernJavascript/blob/main/chapter8/shortCircuit.md)
+- [10장 객체 리터럴](https://github.com/sejineeee/ModernJavascript/blob/main/chapter9/objectLiteral.md)
