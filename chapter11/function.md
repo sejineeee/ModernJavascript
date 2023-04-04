@@ -215,6 +215,58 @@ countdown(10);
 
 함수형 프로그래밍은 순수 함수와 보조 함수의 조합을 통해 외부상태를 변경하는 부수효과를 최소화해서 불변성을 지향하는 프로그래밍 패러다임이다.
 
+### 일급객체
+
+- 무명의 리터럴로 생성할 수 있음
+```javascript
+// 익명함수일 경우, 런타임(할당 단계)에 함수 리터럴이 평가되어 함수 객체가 생성되고 변수에 할당됨
+const sum = function(x, y) {
+  return x + y;
+};
+```
+- 변수나 자료구조(객체, 배열 등)에 저장할 수 있음
+```javascript
+const sum = function(x, y) {
+  return x + y;
+};
+
+const minus = function(x, y) {
+  return x - y;
+};
+
+const operators = [sum, minus];
+```
+- 함수의 매개변수에 전달할 수 있음 (콜백함수)
+- 함수의 반환값으로 사용할 수 있음
+
+### arguments / length
+
+```javascript
+const sum = function(x, y) {
+  console.log(arguments);
+  console.log(`length는 ${sum.length}`);
+  return x + y;
+};
+
+sum(1, 3, 4, 5, 6);
+/*
+{
+  '0': 1,
+  '1': 3,
+  '2': 4,
+  '3': 5,
+  '4': 6,
+  length: 5,
+  callee: ƒ sum(),
+  __proto__: {...}
+}
+*/
+// 'length는 2'
+```
+arguments 객체는 함수 호출시 전달된 인수들의 정보를 담고 있는 이터러블한 유사 배열 객체이다. 매개 변수의 개수를 확정할 수 없는 가변 인자 함수를 구현할 때 유용
+
+`arguments.length는 인자의 개수, 함수 객체의 length는 매개변수의 개수로 값이 다르다.
+
 ---
 참고
 - 코어 자바스크립트 책
