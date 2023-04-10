@@ -19,3 +19,4 @@
 - [16장 프로퍼티](https://github.com/sejineeee/ModernJavascript/blob/main/chapter13/propertyAttribute.md)
 - [17장 생성자 함수](https://github.com/sejineeee/ModernJavascript/blob/main/chapter14/constructorFnc.md)
 - [19장 프로토 타입](https://github.com/sejineeee/ModernJavascript/blob/main/chapter15/prototype.md)
+- [22장 this](https://github.com/sejineeee/ModernJavascript/blob/main/chapter16/this.md)
