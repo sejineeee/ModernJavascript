@@ -24,3 +24,4 @@
 - [23장 실행 컨텍스트](https://github.com/sejineeee/ModernJavascript/blob/main/chapter17/executionContext.md)
 - [24장 클로저](https://github.com/sejineeee/ModernJavascript/blob/main/chapter18/closure.md)
 - [25장 클로저](https://github.com/sejineeee/ModernJavascript/blob/main/chapter19/Class.md)
+- [26장 배열](https://github.com/sejineeee/ModernJavascript/blob/main/chapter20/Array.md)
