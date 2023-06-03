@@ -26,3 +26,4 @@
 - [25장 클로저](https://github.com/sejineeee/ModernJavascript/blob/main/chapter19/Class.md)
 - [26장 배열](https://github.com/sejineeee/ModernJavascript/blob/main/chapter20/Array.md)
 - [27장 정규표현식](https://github.com/sejineeee/ModernJavascript/blob/main/chapter21/RegExp.md)
+- [28장 Set과 Map](https://github.com/sejineeee/ModernJavascript/blob/main/chapter22/SetMap.md)
