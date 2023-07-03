@@ -30,3 +30,4 @@
 - [40장 이벤트](https://github.com/sejineeee/ModernJavascript/blob/main/chapter23/Event.md)
 - [42장 비동기 프로그래밍](https://github.com/sejineeee/ModernJavascript/blob/main/chapter24/asyncProgramming.md)
 - [44장 REST API](https://github.com/sejineeee/ModernJavascript/blob/main/chapter25/RESTAPI.md)
+- [45장 프로미스](https://github.com/sejineeee/ModernJavascript/blob/main/chapter26/Promise.md)
