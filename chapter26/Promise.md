@@ -137,6 +137,27 @@ showCircle(150, 150, 100).then(div => {
 
 promise 내부 코드 작성하는 건 너무 어렵다. `div.style.width` 또는 `return new Promise()`를 하는 건 혼자의 힘으로 작성할 수 있었으나, 내부 코드에 setTimeout과 resolve에 div를 전달해야 된다는 것은 해답을 보고 풀 수밖에 없었다. Promise랑 언제쯤 친해질 수 있을까...
 
+- 프라미스 : then vs catch
+
+```javascript
+// 두 코드가 동일하게 동작할까?
+promise.then(f1).catch(f2);
+
+promise.then(f1, f2);
+```
+
+동일하게 동작할 것 같다. then에는 두 개의 콜백함수 인자를 받는데, 첫 번째 인자는 fulfilled 됐을 때 호출되는 함수, 두 번째 인자는 rejected 됐을 때 호출이 된다. 그렇기 때문에 f1은 fulfilled 됐을 때, f2는 rejected 됐을 때 호출이 된다.
+
+then.catch도 then이 fulfilled 됐을 때 f1이 호출되고, rejected가 됐을 때 catch에서 호출될 것이라고 생각해서 두 코드는 동일하게 동작할 것이라고 생각했다.
+
+
+```
+답은!!!! 두 코드는 다르게 동작한다고 한다!!!!
+promise.then(f1).catch(f2) 코드의 경우 f1에서 에러가 발생할 경우 catch 구문에서 에러가 처리된다.
+
+promise.then(f1, f2) 코드의 경우 then 핸들러에서 에러가 발생하면 체인 아래로 전달이 되는데, 이어지는 체인이 없기 때문에 f1에서 발생한 에러를 처리하지 못하는 것이다.
+```
+
 ---
 참고
 - [모던 자바스크립트 튜토리얼](ko.javascript.info/promise-basics)
